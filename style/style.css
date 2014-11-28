@@ -21,3 +21,8 @@ a {
 .text-light {
 	color: #BCBBBB
 }
+
+.img-center {
+	margin-right: auto;
+	margin-left: auto;
+}
