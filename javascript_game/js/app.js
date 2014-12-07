@@ -48,7 +48,12 @@ Player.prototype.update = function() {
     if (this.y === 0) {
         this.x = 2;
         this.y = 5;
-        allEnemies.push(new Enemy);
+        for (enemy in allEnemies) {
+            allEnemies[enemy].speed = allEnemies[enemy].speed + 5;
+        }
+        if (allEnemies.length < 9) {
+            allEnemies.push(new Enemy);
+        }
         this.score++;
     }
 }
