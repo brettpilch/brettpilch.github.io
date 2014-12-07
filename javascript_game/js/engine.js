@@ -135,7 +135,8 @@ var Engine = (function(global) {
                 ctx.drawImage(Resources.get(rowImages[row]), col * 101, row * 83);
             }
         }
-
+        ctx.font = "20px Verdana";
+        ctx.fillText(player.score, 10, 100);
 
         renderEntities();
     }

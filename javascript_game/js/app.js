@@ -41,6 +41,7 @@ var Player = function() {
     this.y = 5;
     this.xvel = 0;
     this.yvel = 0;
+    this.score = 0;
 }
 
 Player.prototype.update = function() {
@@ -48,6 +49,7 @@ Player.prototype.update = function() {
         this.x = 2;
         this.y = 5;
         allEnemies.push(new Enemy);
+        this.score++;
     }
 }
 
