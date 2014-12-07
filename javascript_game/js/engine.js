@@ -135,7 +135,7 @@ var Engine = (function(global) {
                 ctx.drawImage(Resources.get(rowImages[row]), col * 101, row * 83);
             }
         }
-        ctx.font = "30px Impact";
+        ctx.font = "30px Calibri";
         ctx.fillStyle = "white";
         ctx.fillText(player.score, 10, 100);
 
