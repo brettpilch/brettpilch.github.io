@@ -21,7 +21,7 @@ Enemy.prototype.update = function(dt) {
     if (this.x > 505) {
         this.x = -101;
     }
-    if (Math.abs(this.x - player.x * 101) < 70 && Math.abs(this.y - player.y * 83) < 60) {
+    if (Math.abs(this.x - player.x * 101) < 70 && Math.abs(this.y - player.y * 83) < 70) {
         player.y = 5;
         player.x = 2;
     }
